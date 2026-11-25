@@ -1,0 +1,83 @@
+Enum food_type {
+  dry_food
+  wet_food
+  treat
+  biscuit
+  bone
+  sauce
+  natural_food
+  supplement
+  hay
+  seeds
+  other
+}
+
+Table users {
+  id integer [pk, increment]
+  name varchar
+  email varchar [unique]
+  password varchar
+  created_at datetime
+  updated_at datetime
+}
+
+Table species {
+  id integer [pk, increment]
+  name varchar [unique]
+  created_at datetime
+  updated_at datetime
+}
+
+Table breeds {
+  id integer [pk, increment]
+  species_id integer [ref: > species.id]
+  name varchar
+  created_at datetime
+  updated_at datetime
+
+  indexes {
+    (species_id, name) [unique]
+  }
+}
+
+Table pets {
+  id integer [pk, increment]
+  user_id integer [ref: > users.id]
+  name varchar
+  species_id integer [null, ref: > species.id]
+  custom_species varchar [null]
+  breed_id integer [null, ref: > breeds.id]
+  custom_breed varchar [null]
+  weight_kg numeric
+  height_cm numeric
+  neutered "tinyint(1)"
+  photo_path varchar [null]
+  created_at datetime
+  updated_at datetime
+}
+
+Table foods {
+  id integer [pk, increment]
+  user_id integer [ref: > users.id]
+  name varchar
+  brand varchar [null]
+  type food_type
+  photo_path varchar [null]
+  created_at datetime
+  updated_at datetime
+}
+
+Table reviews {
+  id integer [pk, increment]
+  pet_id integer [ref: > pets.id]
+  food_id integer [ref: > foods.id]
+  stars integer
+  price numeric [null]
+  note text [null]
+  created_at datetime
+  updated_at datetime
+
+  indexes {
+    (pet_id, food_id) [unique]
+  }
+}
