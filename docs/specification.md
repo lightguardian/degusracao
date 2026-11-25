@@ -69,6 +69,7 @@
 | R13 | Rodar o projeto com Docker em poucos comandos. | M |
 | R14 | Testes unitários, de feature e de browser. | M |
 | R15 | Integração contínua no GitHub Actions. | M |
+| R23 | Dashboard com fotos dos pets e comidas melhor avaliados | S |
 | R16 | Comentar nas comidas de outros tutores. | C |
 | R17 | Deploy automático a cada push. | C |
 | R22 | Telas de cadastro, edição e exclusão de espécies e raças. | C |
@@ -124,7 +125,7 @@
 **C04. Login válido**
 - Dado que tenho uma conta
 - Quando informo meu e-mail e minha senha
-- Então entro no sistema e vejo a tabela dos meus pets
+- Então entro no sistema e vejo o dashboard
 
 **C05. Login inválido**
 - Dado que estou na tela de login
@@ -244,7 +245,7 @@
 
 ### Textos na tela
 
-**C27. Enum em português**
+**C27. Enum (map, de-para) em português**
 - Dado que o pet Rex tem a espécie `dog`
 - Quando abro a tabela dos meus pets
 - Então a espécie do Rex aparece como "Cachorro"
