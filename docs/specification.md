@@ -79,6 +79,7 @@
 | R19 | Moderação ou bloqueio de comida repetida. | W |
 | R20 | Preço médio por comida. | W |
 | R21 | Armazenamento externo de arquivos (S3, MinIO, Swift). | W |
+| R00 | Instalar Docker e rodar laravel | M |
 
 ### Requisitos não funcionais
 
