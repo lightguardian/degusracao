@@ -22,7 +22,7 @@ Projeto da disciplina Desenvolvimento de Aplicações Backend com Framework (UTF
 
 ## Diagrama do banco de dados
 
-> Database gerado a partir de [dbdiagram.io](https://dbdiagram.io) com arquivo [/docs/dbdiagram.svg](/docs/dbdiagram.svg).
+> Database gerado a partir de [dbdiagram.io](https://dbdiagram.io) com arquivo [/docs/database.dbml](/docs/database.dbml).
 
 ![Diagrama do banco de dados](docs/dbdiagram.svg)
 
