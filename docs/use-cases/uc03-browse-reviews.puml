@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+actor Tutor
+rectangle "DegusRação" {
+  usecase "UC03 Consultar avaliações" as UC03
+  usecase "Buscar comida" as SearchFood
+  usecase "Filtrar avaliações" as FilterReviews
+  usecase "Editar ou excluir avaliação" as ManageReview
+}
+Tutor --> UC03
+UC03 ..> SearchFood : <<include>>
+FilterReviews ..> UC03 : <<extend>>
+ManageReview ..> UC03 : <<extend>>\navaliação de um pet meu
+@enduml

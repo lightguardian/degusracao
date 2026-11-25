@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+actor Tutor
+rectangle "DegusRação" {
+  usecase "UC02 Avaliar comida existente" as UC02
+  usecase "Buscar comida" as SearchFood
+  usecase "Registrar avaliação" as RegisterReview
+}
+Tutor --> UC02
+UC02 ..> SearchFood : <<include>>
+UC02 ..> RegisterReview : <<include>>
+@enduml

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" width="860" height="480" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker><marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#333" stroke-width="1.5"/></marker></defs>
+<rect width="860" height="480" fill="#ffffff"/>
+<rect x="190" y="20" width="650" height="440" rx="6" fill="#fafafa" stroke="#444" stroke-width="1.5"/>
+<text x="515.0" y="46" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">DegusRação</text>
+<g stroke="#333" stroke-width="2" fill="none"><circle cx="80" cy="202" r="11" fill="#fff"/><line x1="80" y1="213" x2="80" y2="250"/><line x1="58" y1="226" x2="102" y2="226"/><line x1="80" y1="250" x2="62" y2="278"/><line x1="80" y1="250" x2="98" y2="278"/></g>
+<text x="80" y="298" text-anchor="middle" font-size="14" fill="#222">Tutor</text>
+<line x1="102" y1="226" x2="286.5" y2="235.0" stroke="#333" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="495.0" y1="240.0" x2="605.0" y2="240.0" stroke="#333" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#o)"/>
+<rect x="510.6" y="205.0" width="78.8" height="22" rx="3" fill="#fff" fill-opacity="0.95"/>
+<text x="550.0" y="221.0" text-anchor="middle" font-size="13" font-style="italic">«include»</text>
+<line x1="652.6" y1="125.1" x2="447.4" y2="214.9" stroke="#333" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#o)"/>
+<rect x="466.2" y="155.0" width="71.6" height="22" rx="3" fill="#fff" fill-opacity="0.95"/>
+<text x="502.0" y="171.0" text-anchor="middle" font-size="13" font-style="italic">«extend»</text>
+<line x1="655.4" y1="364.4" x2="444.6" y2="265.6" stroke="#333" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#o)"/>
+<rect x="398.2" y="301.0" width="179.6" height="40" rx="3" fill="#fff" fill-opacity="0.95"/>
+<text x="488.0" y="317.0" text-anchor="middle" font-size="13" font-style="italic">«extend»</text>
+<text x="488.0" y="335.0" text-anchor="middle" font-size="13" fill="#555">avaliação de um pet meu</text>
+<ellipse cx="390" cy="240" rx="105" ry="30" fill="#dbeafe" stroke="#2b4c7e" stroke-width="2"/>
+<text x="390" y="237" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">UC03 Consultar</text>
+<text x="390" y="253" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">avaliações</text>
+<ellipse cx="710" cy="240" rx="105" ry="30" fill="#fff" stroke="#2b4c7e" stroke-width="1.5"/>
+<text x="710" y="245" text-anchor="middle" font-size="14" font-weight="normal" fill="#1a1a1a">Buscar comida</text>
+<ellipse cx="710" cy="100" rx="105" ry="30" fill="#fff" stroke="#2b4c7e" stroke-width="1.5"/>
+<text x="710" y="105" text-anchor="middle" font-size="14" font-weight="normal" fill="#1a1a1a">Filtrar avaliações</text>
+<ellipse cx="710" cy="390" rx="105" ry="30" fill="#fff" stroke="#2b4c7e" stroke-width="1.5"/>
+<text x="710" y="387" text-anchor="middle" font-size="14" font-weight="normal" fill="#1a1a1a">Editar ou excluir</text>
+<text x="710" y="403" text-anchor="middle" font-size="14" font-weight="normal" fill="#1a1a1a">avaliação</text>
+</svg>
