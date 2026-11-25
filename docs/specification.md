@@ -7,7 +7,9 @@
 | Tutor | `User` | Usuário cadastrado que possui pets e avalia comidas. |
 | Pet | `Pet` | Animal de um tutor. |
 | Espécie | `Species` | Espécie do animal: cão, gato, pássaro etc. |
-| Raça | `Breed` | Raça do animal, por exemplo: pastor alemão, siamês, beija-flor. |
+| Raça | `Breed` | Raça do animal, por exemplo: pastor alemão (cão), siamês(gato), cacatua (pássaro). |
+| Espécie digitada | `custom_species` | Espécie escrita pelo tutor quando ela não está na lista (solução proposital para diminuir o escopo do projeto, descartando tela de criação de espécies e raças). |
+| Raça digitada | `custom_breed` | Raça escrita pelo tutor quando ela não está na lista. |
 | Peso | `weight_kg` | Peso do pet em quilogramas (kg). |
 | Altura | `height_cm` | Altura do pet em centímetros. |
 | Castrado | `neutered` | Indica se o pet é castrado. |
@@ -159,6 +161,16 @@
 - Quando deixo a raça vazia
 - Então o pet é salvo e aparece como "sem raça definida (SRD)"
 
+**C28. Lista não contempla raça desejada**
+- Dado que, a raça que desejo não esta na lista
+- Quando clico no botão de adição de raça
+- Então são escondidas as opções do seletor e me é fornecido um campo para digitação da raça específica
+
+**C29. Cadastro de pet sem espécie (espécie em branco)**
+- Dado que estou cadastrando um pet
+- Quando não escolho uma espécie da lista nem digito uma
+- Então o cadastro é recusado com erro no campo espécie
+
 **C11. Pet de outro tutor**
 - Dado que o pet Floco pertence a outro tutor
 - Quando tento editar ou excluir o Floco
@@ -242,10 +254,3 @@
 - Dado que a avaliação do Floco pertence a outro tutor
 - Quando tento editar ou excluir essa avaliação
 - Então o acesso é negado
-
-### Textos na tela
-
-**C27. Enum (map, de-para) em português**
-- Dado que o pet Rex tem a espécie `dog`
-- Quando abro a tabela dos meus pets
-- Então a espécie do Rex aparece como "Cachorro"
