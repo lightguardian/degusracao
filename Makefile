@@ -41,6 +41,10 @@ test:
 ps:
 	$(COMPOSE_DEV) ps
 
+dev-dusk:
+	$(COMPOSE_DEV) exec app touch database/testing.sqlite
+	$(COMPOSE_DEV) exec app php artisan dusk $(args)
+
 help:
 	@echo "dev-up        Start containers"
 	@echo "dev-down      Stop containers"
@@ -54,3 +58,4 @@ help:
 	@echo "dev-npm       args=\"run build\""
 	@echo "test          Run tests (args=\"--testsuite Unit\")"
 	@echo "ps            List containers"
+	@echo "dev-dusk      Run browser tests (args=\"tests/Browser/LoginTest.php\")"

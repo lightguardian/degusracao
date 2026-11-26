@@ -67,5 +67,3 @@ Tornar a escolha de comidas e petiscos para pets mais concisa. Permitindo basear
 ![Cadastrar comida](docs/wireframes/04-cadastrar-comida.png)
 
 ![Página da comida](docs/wireframes/05-pagina-da-comida.png)
-
-> Esta branch não será excluída, pois contém o levantamento de requisitos antes da implementação.

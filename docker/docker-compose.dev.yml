@@ -14,3 +14,12 @@ services:
       - "5173:5173"
     environment:
       SERVER_HOST: 0.0.0.0
+      DUSK_DRIVER_URL: http://selenium:4444/wd/hub
+    networks:
+      default:
+        aliases:
+          - degusracao.test
+
+  selenium:
+    image: selenium/standalone-chromium:156.0
+    shm_size: 2gb
